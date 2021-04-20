@@ -14,5 +14,8 @@ async def on_message(message):
 
     if message.content.startswith('/boba'):
         await message.channel.send('Finish your boba!')
+        
+    if message.content.startswith('baaa'):
+      await message.channel.send('Baaaa~')
 
 client.run(os.getenv('TOKEN'))
