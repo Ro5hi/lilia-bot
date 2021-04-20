@@ -5,7 +5,7 @@ client = discord.Client()
 
 @client.event
 async def on_ready():
-    print('{0.user} is here!'.format(client))
+    print('We have logged in as {0.user}'.format(client))
 
 @client.event
 async def on_message(message):
@@ -13,6 +13,6 @@ async def on_message(message):
         return
 
     if message.content.startswith('/boba'):
-        await message.channel.send('Finish my boba!')
+        await message.channel.send('Finish your boba!')
 
-client.run(os.getenv)
+client.run(os.getenv('TOKEN'))

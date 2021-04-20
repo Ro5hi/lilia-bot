@@ -13,6 +13,6 @@ async def on_message(message):
         return
 
     if message.content.startswith('/boba'):
-        await message.channel.send('Finish my boba!')
+        await message.channel.send('Finish your boba!')
 
-client.run(os.getenv)
+client.run(os.getenv('TOKEN'))
