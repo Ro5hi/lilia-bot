@@ -1,15 +1,23 @@
 # Lili Bot
 
-Now live on Lilia Agares' Discord server! Lilibot is responsive and sassy. A bot version of the actual VTuber herself. 
+Now live on Lilia Agares' Discord server! Lilibot is a sassy bot that responds based on commands or messages. A bot version of the actual VTuber herself. 
 
 # Commands 
 
-- /ara, ara ara, awa awa, ara
+- /lili
+- /ara 
 - /boba
 - /nya
 - /ily
 - baaa
 - curry
+
+# Preview 
+
+![Lili](https://imgur.com/Wfoi4lO.jpg)
+![Chat](https://imgur.com/DiOQA5L.jpg)
+
+_________________________________
 
 # To-do
 
