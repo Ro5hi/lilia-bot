@@ -29,10 +29,7 @@ async def on_message(message):
       
     if msg.startswith('/nya'):
         await.message.channel.send('No free nyas, sorry~')
-        
-    if msg.startswith('ara ara'):
-        await.message.channel.send(Nope)
-        
+               
     if any(word in msg for word in Nope):
         await.message.channel.send(random.choice(Bad))
 
