@@ -1,4 +1,4 @@
-# Liia Bot
+# Lili Bot
 
 To be used for a Discord server for VTuber Lilia Agares.
 
