@@ -9,7 +9,7 @@ from keep_alive import keep_alive
 client = discord.Client()
 
 Nope = ["/ara", "ara ara"]
-
+Ihy = ["#cancelled", "Shutuuup", "shshjsjkjdjd", "asdiojdsdjlsd", "..I love you too.", "Pfffft", "Shushhh!", "Noooo", "Awww I love me too", "404 Error", "101: Reciprocate love module not found", "Uhm, ok", "sure", "...", "Sylvain is true husbando, not u"]
 Bad = ["pain", "NO", "None for you", "Never!"]
 
 # def get_twitch():
@@ -28,8 +28,14 @@ async def on_message(message):
 
     msg = message.content
 
+    if msg.startswith('/lili'):
+      await message.channel.send('Hi, my name is LiliBot! My commands are /boba, /nya, and /ara. Discover the rest!')
+
     if msg.startswith('/boba'):
         await message.channel.send('Finish your boba!')
+    
+    if msg.startswith('/ily'):
+        await message.channel.send(random.choice(Ihy))
     
     if msg.startswith('baaa'):
       await message.channel.send('Baaaa~')
