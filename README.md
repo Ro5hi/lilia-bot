@@ -8,4 +8,4 @@ To be used for a Discord server for VTuber Lilia Agares.
 - Response messages in:
     - GIF
     - Text
-    
+- Twitch Notifications
