@@ -21,8 +21,6 @@ Now live on Lilia Agares' Discord server! Lilibot is a sassy bot that responds b
 ## [Lilia Agares - Twitch](https://twitch.tv/deepsealily)
 ## [Lilia Agares - Twitter](https://twitter.com/LiliaAgares)
 
-_________________________________
-
 # To-do
 
 - Multiple Response messages in:
