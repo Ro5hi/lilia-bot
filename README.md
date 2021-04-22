@@ -8,6 +8,7 @@ Now live on Lilia Agares' Discord server! Lilibot is a sassy bot that responds b
 - /ara 
 - /boba
 - /nya
+- /advice
 - /ily
 - baaa
 - curry
