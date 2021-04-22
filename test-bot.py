@@ -8,13 +8,14 @@ from keep_alive import keep_alive
 
 client = discord.Client()
 
-Araaa = ["/ara", "ara ara", "awa awa", "ara", "Ara!", "ara!"]
-NoAra = ["pain", "NO", "None for you", "Never!", "504 Bad Gateway: I hit you now", "Nooooo", "aspdijspdisj", "sdosdjsoidj", "dfgdjkfg", "Aughhh", "a-- no"]
-NoNya= ["No nyas for you", "..nya.", "Are you satisfied?", "hahahahahah funny", "Keep at it", "Next", "Not free!", "ahhhhh no"]
-Ihy = ["#cancelled", "Shutuuup", "shshjsjkjdjd", "asdiojdsdjlsd", "..I love you too.", "Pfffft", "Shushhh!", "Noooo", "Awww I love me too", "404 Error: N o p e", "400 Error Bad Request: Reciprocate love module not found.", "Uhm, ok", "sure", "...", "Sylvain is true husbando, not u"]
+Araaa = ["/ara", "/araara", "/Araara", "/AraAra" "ara ara", "awa awa", "ara", "Ara!", "ara!"]
+NoAra = ["pain", "NO", "None for you", "Never!", "504 Bad Gateway: I hit you now", "Nooooo", "aspdijspdisj", "sdosdjsoidj", "dfgdjkfg", "Aughhh", "a-- no", "ばか やろ!", "バカ."]
+NoNya= ["No nyas for you", "..nya.", "Are you satisfied?", "hahahahahah funny", "Keep at it", "Next", "Not free!", "ahhhhh no", "ふざけるな!", "バカ.", "geez", "Nooooo", "You first", "ジーーー, じーーー"]
+Ihy = ["#cancelled", "Shutuuup", "shshjsjkjdjd", "asdiojdsdjlsd", "..I love you too.", "Pfffft", "Shushhh!", "Noooo", "Awww I love me too", "404 Error: lol", "400 Error Bad Request: Reciprocate love module not found.", "Uhm, ok", "sure", "...", "Sylvain is true husbando, not u", "ばか やろ!", "バカ.", "No", "Sad", "What did you expect?", "Does your name start with S and end with an N? Two syllables? Rhymes with Sylvain?", "Sorry no room", "wow", "sldklsajjksdjf", "*stares in displeased*", "*slow clap*", "uh huh"]
 Boba = ["Finish your boba!", "Go get one right now", "Sounds like you need another", "DRINK", "Boba time!"]
 Yum = ["curry", "curryyy", "Curry", "Curry!"]
-Curry = ["curryyyyy", "Oooo yum!", "Craving some now", "Curry!? Where!", "Food!"]
+Curry = ["curryyyyy", "Oooo yum!", "Craving some now", "Curry!? Where!", "Food!", "おいしい~"]
+Advisor = ["Boba, it's all you need.", "Life's tough but a bed is soft y'know.", "Go to sleep. At 2AM.", "Ask yourself this: Will you survive?", "*sigh* You just never learn huh.", "Hmmm idk.", "You come to me for help? rip", "Go to sleep!", "Drink water.", "Whatever it is you need to do just do it. No excuse!"]
 
 @client.event
 async def on_ready():
@@ -41,6 +42,9 @@ async def on_message(message):
 
     if msg.startswith('/nya'):
       await message.channel.send(random.choice(NoNya))
+
+    if msg.startswith('/advice'):
+      await message.channel.send(random.choice(Advisor))
 
     if any(word in msg for word in Araaa):
       await message.channel.send(random.choice(NoAra))
