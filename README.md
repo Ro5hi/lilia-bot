@@ -24,9 +24,10 @@ Now live on Lilia Agares' Discord server! Lilibot is a sassy bot that responds b
 # To-do
 
 - Multiple Response messages in:
-    - GIF
-    - Text
+    - Emoji
 - Community requested fortune telling (with sass). 
+- Get ID of @liliherd role for mentions to:
+    - Work on a functioning Twitch notification using JSON.
 
 # Completed 
 
