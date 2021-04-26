@@ -19,6 +19,7 @@ Curry = ["curryyyyy", "Oooo yum!", "Craving some now", "Curry!? Where!", "Food!"
 Advisor = ["Boba, it's all you need.", "Life's tough but a bed is soft y'know.", "Go to sleep. At 2AM.", "Ask yourself this: Will you survive?", "*sigh* You just never learn huh.", "Hmmm idk.", "You come to me for help? rip", "Go to sleep!", "Drink water.", "Whatever it is you need to do just do it. No excuse!"]
 Twitch = ["now live on Twitch", "deepsealily is now"]
 Live = ["@liliherd your reaper is live!", "Come watch the stream @liliherd !", "Grab your bobas @liliherd because the show is starting !"]
+# configure @liliherd role mention instead of @everyone
 Test = ["hey Lilibot", "hi Lilibot"]
 
 @client.event
