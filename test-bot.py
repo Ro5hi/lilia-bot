@@ -20,7 +20,8 @@ Advisor = ["Boba, it's all you need.", "Life's tough but a bed is soft y'know.",
 Twitch = ["now live on Twitch", "deepsealily is now"]
 Live = ["@liliherd your reaper is live!", "Come watch the stream @liliherd !", "Grab your bobas @liliherd because the show is starting !"]
 # configure @liliherd role mention instead of @everyone
-Test = ["hey Lilibot", "hi Lilibot"]
+Welcome = ["Welcome to the herd!"]
+# need discord admin permission to view userIDs
 
 @client.event
 async def on_ready():
