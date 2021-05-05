@@ -10,6 +10,9 @@ Now live on Lilia Agares' Discord server! Lilibot is a sassy bot that responds b
 - /nya
 - /advice
 - /ily
+- hello
+- good bye
+- good night
 - baaa
 - curry
 
