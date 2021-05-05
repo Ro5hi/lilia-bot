@@ -67,13 +67,13 @@ async def on_message(message):
     if any(word in msg for word in Yum):
       await message.channel.send(random.choice(Curry))
 
-    if user_message.lower() == 'hello':
+    if any(word in msg for word in Hello):
       await message.channel.send(f'Hello {username}!')
       return
-    elif user_message.lower() == 'bye':
+    elif any(word in msg for word in Goodbye) == 'bye':
       await message.channel.send(f'See ya {username}!')
       return 
-    elif user_message.lower() == 'good night':
+    elif any(word in msg for word in Goodnight):
       await message.channel.send(f'Good night {username}!')
       return 
   
