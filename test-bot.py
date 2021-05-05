@@ -70,7 +70,7 @@ async def on_message(message):
     if any(word in msg for word in Hello):
       await message.channel.send(f'Hello {username}!')
       return
-    elif any(word in msg for word in Goodbye) == 'bye':
+    elif any(word in msg for word in Goodbye):
       await message.channel.send(f'See ya {username}!')
       return 
     elif any(word in msg for word in Goodnight):
