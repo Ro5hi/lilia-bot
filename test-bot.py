@@ -19,7 +19,9 @@ Curry = ["curryyyyy", "Oooo yum!", "Craving some now", "Curry!? Where!", "Food!"
 Advisor = ["Boba, it's all you need.", "Life's tough but a bed is soft y'know.", "Go to sleep. At 2AM.", "Ask yourself this: Will you survive?", "*sigh* You just never learn huh.", "Hmmm idk.", "You come to me for help? rip", "Go to sleep!", "Drink water.", "Whatever it is you need to do just do it. No excuse!"]
 Twitch = ["now live on Twitch", "deepsealily is now", "@liliherd"]
 Live = ["@everyone your reaper is live!", "Your weekly dose of reaper is here @everyone!", "Come watch the stream @everyone !", "Grab your bobas @everyone because the show is starting!"]
-
+Hello = ["Hello", "hello", "hi", "Hi", "Hey Lilibot", "Hi Lilibot", "/hello", "/hi"]
+Goodbye = ["Good bye", "goodbye", "Goodbye", "Bye!", "bye", "see ya"]
+Goodnight = ["gnight", "gnite", "Good night", "good night", "goodnight", "nai nai", "night night"]
 
 @client.event
 async def on_ready():
@@ -65,13 +67,13 @@ async def on_message(message):
     if any(word in msg for word in Yum):
       await message.channel.send(random.choice(Curry))
 
-    if user_message.lower() == 'hello':
+    if any(word in msg for word in Hello):
       await message.channel.send(f'Hello {username}!')
       return
-    elif user_message.lower() == 'bye':
+    elif any(word in msg for word in Goodbye) == 'bye':
       await message.channel.send(f'See ya {username}!')
       return 
-    elif user_message.lower() == 'good night':
+    elif any(word in msg for word in Goodnight):
       await message.channel.send(f'Good night {username}!')
       return 
   
