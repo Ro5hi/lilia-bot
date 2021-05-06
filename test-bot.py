@@ -19,9 +19,9 @@ Curry = ["curryyyyy", "Oooo yum!", "Craving some now", "Curry!? Where!", "Food!"
 Advisor = ["Boba, it's all you need.", "Life's tough but a bed is soft y'know.", "Go to sleep. At 2AM.", "Ask yourself this: Will you survive?", "*sigh* You just never learn huh.", "Hmmm idk.", "You come to me for help? rip", "Go to sleep!", "Drink water.", "Whatever it is you need to do just do it. No excuse!"]
 Twitch = ["now live on Twitch", "deepsealily is now", "@liliherd"]
 Live = ["@everyone your reaper is live!", "Your weekly dose of reaper is here @everyone!", "Come watch the stream @everyone !", "Grab your bobas @everyone because the show is starting!"]
-Hello = ["Hello", "hello", "hi", "Hi", "Hey Lilibot", "Hi Lilibot", "/hello", "/hi"]
-Goodbye = ["Good bye", "goodbye", "Goodbye", "Bye!", "bye", "see ya"]
-Goodnight = ["gnight", "gnite", "Good night", "good night", "goodnight", "nai nai", "night night"]
+Hello = ["/yo", "/sup", "/hello", "/hi", "/hilili", "/heylili", "Hello~", "Hi~", "Yo~", "Sup~"]
+Goodbye = ["/bye", "/seeya", "/goodbye", "Bye~"]
+Goodnight = ["/night", "/goodnight", "/gnight", "/nainai", "/nightnight", "Night~"]
 
 @client.event
 async def on_ready():
@@ -39,7 +39,7 @@ async def on_message(message):
     print(f'{username}: {user_message} ({channel})')
 
     if msg.startswith('/lili'):
-      await message.channel.send('```Hi, my name is LiliBot! My commands are /lili, /boba, /nya, /advice, /ily, and /ara. Discover the rest!```')
+      await message.channel.send('```Hi, my name is LiliBot! My commands are /lili, /hello, /goodbye, /goodnight, /boba, /nya, /advisor, /ily, and /ara. Discover the rest!```')
 
     if msg.startswith('/boba'):
         await message.channel.send(random.choice(Boba))
@@ -58,7 +58,7 @@ async def on_message(message):
     if any(word in msg for word in Nyaaa):
       await message.channel.send(random.choice(NoNya))
 
-    if msg.startswith('/advice'):
+    if msg.startswith('/advisor'):
       await message.channel.send(random.choice(Advisor))
 
     if any(word in msg for word in Araaa):
