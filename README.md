@@ -20,15 +20,17 @@ Now live on Lilia Agares' Discord server! Lilibot is a sassy bot that responds b
 ![Lili](https://imgur.com/Wfoi4lO.jpg)
 ![Chat](https://imgur.com/DiOQA5L.jpg)
 
+# See the bot in action:
+![Bot Server](https://discord.gg/DZK3FBex)
+
+
 ## [Lilia Agares - Twitch](https://twitch.tv/deepsealily)
 ## [Lilia Agares - Twitter](https://twitter.com/LiliaAgares)
 
 # To-do
 
 - GIF responses.
-- Community requested fortune telling (with sass). 
-- Music bot functionalities.
-- Specific messages based on national holidays and international holidays.
+- Holiday greetings.
 
 # Completed 
 
